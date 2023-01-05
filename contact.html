@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+         <title>ACCUEIL</title>
+  </head>
+  <body>
+    <header>
+        <h1>Mon Site Web</h1>
+        <nav>
+           <ul>
+            <a href="accueil.html"> <li>Accueil</li></a>
+            <a href="accueil.html">  <li>A propos</li></a>
+            <a href="accueil.html">  <li>Services</li></a>
+            <a href="contact.html"> <li>Contact</li></a>
+          </ul>
+       </nav>
+   </header>
+   <main>
+    
+<div class="contactez-nous">
+    <h1>Contactez-nous</h1>
+    <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+    <form action="/page-traitement-donnees" method="post">
+    <div>
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" placeholder="AISSATOU" required>
+    </div>
+    <div>
+    <label for="email">Votre e-mail</label>
+    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+    </div>
+    <div>
+    <label for="sujet">Quel est le sujet de votre message ?</label>
+    <select name="sujet" id="sujet" required>
+    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+    <option value="probleme-compte">Problème avec mon compte</option>
+    <option value="question-produit">Question à propos d’un produit</option>
+    <option value="suivi-commande">Suivi de ma commande</option>
+    <option value="autre">Autre...</option>
+    </select>
+    </div>
+    <div>
+    <label for="message">Votre message</label>
+    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+    </div>
+    <div>
+    <button type="submit">Envoyer mon message</button>
+    </div>
+    </form>
+    </div>
+</main>
+<footer><p>CopyRighT DITI5 @ 2023 </p></footer>
+  </body>
+</html>
